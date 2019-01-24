@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <style>
+      body {
+  background-image: url("bg1.jpg");
+  background-position: 0% 0%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+    </style>
+  </head>
+  <body>
+    <h1>
+      Register
+    </h1>
+    
+    <form action="http://ywebca.org" method="get">
+      <label>First Name: 
+      <input required type="text">
+      </label>
+      <label>Second Name: 
+      <input required type="text">
+      </label>
+      <div>
+      <!--     No gender label on prompt     -->
+        <label for="gender"></label> 
+        <input name="gender" type="radio" value="male">Male
+        <input name="gender" type="radio" value="female">Female
+        <input name="gender" type="radio" value="other">Other
+      </div>
+      <div>
+      <label for="email">Email: </label>
+      <input required id="email" type="email">
+      <label for="password">Password: </label>
+        <input required id="password" type="password">
+      </div>
+      
+      <div>
+
+        <label>
+          Birthday: 
+        </label>
+        <input type="date" id="start" name="start"
+       min="1930-01-01" value="2009-01-01">
+      </div>
+      <div>
+        <label>I agree to the terms and conditions
+        <input type="checkbox">
+        </label>
+      </div>
+      
+        <br>
+       <input type="submit">
+        <hr>
+        <a href="index.html">Go back to Home page</a>
+        <br>
+        <a href="table.html">Go back to Table page</a>
+             
+    </form>
+    
+  </body>
+</html>
